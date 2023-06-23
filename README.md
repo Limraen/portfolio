@@ -853,3 +853,696 @@
 ***
 
 [Вернуться наверх](#up)<p>
+
+# <a name="bug-reports"></a> Отчеты о дефектах
+
+**<details><summary>BUG-4966: Выбранные аптеки не отображаются в разделе "Любимые аптеки" личного кабинета</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Закрыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">27.02.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10</td>
+        </tr>
+        <tr>
+            <td>• Google Chrome, Версия 110.0.5481.104</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. <a href="https://www.rigla.ru/">https://www.rigla.ru/</a> </td>
+        </tr>
+        <tr>
+            <td>2. Пользователь авторизован в системе и находится в личном кабинете.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Выбрать в личном кабинете вкладку "Любимые аптеки".<br>
+                2. Нажать на кнопку-ссылку "Добавьте любимую аптеку".<br>
+                3. Ввести в поисковую строку название станции метро (пример: "Солнцево").<br>
+                4. Нажать на кнопку "Показать аптеки списком".<br>
+                5. Нажать на значок сердца первой в списке аптеки.<br>
+                6. Вернуться к разделу "Любимые аптеки".<br>
+                7. Обновить страницу.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Выбранные аптеки добавлены в список избранных и отображаются в разделе "Любимые аптеки" личного кабинета.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Выбранные аптеки добавлены в список избранных, но не отображаются в разделе "Любимые аптеки" личного кабинета.</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-4970: При редактировании личных данных невозможно оставить поле "Фамилия" пустым</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Новый</td>
+            <td align="center">Незначительная</td>
+            <td align="center">Низкий</td>
+            <td align="center">27.02.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10</td>
+        </tr>
+        <tr>
+            <td>• Google Chrome, Версия 110.0.5481.104</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. <a href="https://www.rigla.ru/">https://www.rigla.ru/</a> </td>
+        </tr>
+        <tr>
+            <td>2. Пользователь авторизован в системе и находится в личном кабинете.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Выбрать в личном кабинете вкладку "Мои данные".<br>
+                2. Удалить значение из поля "Фамилия".<br>
+                3. Нажать на кнопку "Сохранить".<br>
+                4. Обновить страницу.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Удаленное значение не отображается в поле "Фамилия".</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Удаленное значение отображается в поле "Фамилия".</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-5266: При нажатии на кнопку "Показать все" в расширенном поиске каталога не появляется элемент прокрутки</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Закрыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">15.03.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10</td>
+        </tr>
+        <tr>
+            <td>• Google Chrome, Версия 110.0.5481.104</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. <a href="https://www.rigla.ru/">https://www.rigla.ru/</a> </td>
+        </tr>
+        <tr>
+            <td>2. Пользователь находится на главной странице.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Нажать на элемент "Каталог".<br>
+                2. Выбрать любой раздел.<br>
+                3. Нажать на кнопку "Показать все" в любом поле расширенного поиска.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Появляется полоса прокрутки для списка.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Полоса прокрутки для списка отсутствует.</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-5269: При выборе количества отображаемого товара "80" на странице каталога отображаются только 50 товаров</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Открыт</td>
+            <td align="center">Незначительная</td>
+            <td align="center">Низкий</td>
+            <td align="center">15.03.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10</td>
+        </tr>
+        <tr>
+            <td>• Google Chrome, Версия 110.0.5481.104</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. <a href="https://www.rigla.ru/">https://www.rigla.ru/</a> </td>
+        </tr>
+        <tr>
+            <td>2. Пользователь находится на главной странице.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Нажать на элемент "Каталог".<br>
+                2. Выбрать любой раздел.<br>
+                3. В поле "Показывать по:" выбрать значение "80".
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>На странице отображается список из 80-ти товаров.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>На странице отображается список из 50-ти товаров.</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-5341: Список избранных товаров не сохраняется на аккаунте</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Открыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">22.03.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10</td>
+        </tr>
+        <tr>
+            <td>• Google Chrome, Версия 110.0.5481.104</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. <a href="https://www.rigla.ru/">https://www.rigla.ru/</a> </td>
+        </tr>
+        <tr>
+            <td>2. Пользователь авторизован в системе и находится на главной странице.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Нажать на элемент "Каталог".<br>
+                2. Выбрать любой раздел.<br>
+                3. Добавить несколько товаров в избранное.<br>
+                4. Выйти из аккаунта.<br>
+                5. Авторизоваться на другом устройстве.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>При авторизации на другом устройстве, все добавленные товары отображаются во вкладке "Избранные товары".</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>При авторизации на другом устройстве, список избранных товаров пуст.</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-5343: В форме обратной связи не появляется предупреждение о некорректном значении в поле "Ваше имя"</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Открыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">22.03.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10</td>
+        </tr>
+        <tr>
+            <td>• Google Chrome, Версия 110.0.5481.104</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. <a href="https://www.rigla.ru/">https://www.rigla.ru/</a> </td>
+        </tr>
+        <tr>
+            <td>2. Пользователь находится на главной странице.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Выбрать вкладку "Еще" меню.<br>
+                2. Выбрать из выпадающего списка раздел "Обратная связь".<br>
+                3. Ввести в поле "Ваше имя" значение "1".<br>
+                4. Нажать на кнопку "Отправить".
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Появляется предупреждение о необходимости ввести корректное имя.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Предупреждение о необходимости ввести корректное имя не появляется.</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-5344: В форме обратной связи не появляется предупреждение о значении некорректного формата в поле "E-mail"</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Закрыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">22.03.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10</td>
+        </tr>
+        <tr>
+            <td>• Google Chrome, Версия 110.0.5481.104</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. <a href="https://www.rigla.ru/">https://www.rigla.ru/</a> </td>
+        </tr>
+        <tr>
+            <td>2. Пользователь находится на главной странице.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Выбрать вкладку "Еще" меню.<br>
+                2. Выбрать из выпадающего списка раздел "Обратная связь".<br>
+                3. Ввести в поле "E-mail" значение без символа "@".
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Появляется предупреждение о необходимости ввести адрес электронной почты корректного формата.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Предупреждение о необходимости ввести адрес электронной почты корректного формата не появляется.</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+***
+
+[Вернуться наверх](#up)<p>
