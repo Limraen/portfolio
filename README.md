@@ -1546,3 +1546,147 @@
 ***
 
 [Вернуться наверх](#up)<p>
+
+# <a name="state-and-transition-table"></a> Таблица принятия решений
+
+### **Примеры объектов, подходящих для техники тестирования состояний и переходов:**
+
+<table>
+    <tbody>
+        <tr>
+            <td width="1000px">1. <b>Учетная запись</b> (Создана, Подтверждена, Изменена)</td>
+        </tr>
+        <tr>
+            <td width="1000px">2. <b>Бонусная карта</b> (Создана, Активирована, Без бонусов, С бонусами, Заблокирована, Возобновлена)</td>
+        </tr>
+        <tr>
+            <td width="1000px">3. <b>Товар</b> (Не в наличии, В наличии, Заказан, Оплачен, Продан, Возвращен)</td>
+        </tr>
+        <tr>
+            <td width="1000px">4. <b>Корзина</b> (Пустая, Полная)</td>
+        </tr>
+        <tr>
+            <td width="1000px">5. <b>Заказ</b> (Не существует, Новый, Оплачен онлайн, Сформирован, Готов к получению, Отменен, Оплачен, Получен)</td>
+        </tr>
+    </tbody>
+</table>
+
+### **Диаграмма состояний и переходов для объекта "Заказ":**
+
+<table>
+    <tbody>
+        <tr>
+            <td align="center"><img src="https://drive.google.com/file/d/1BUr8OZ7L5xD6m3A2Db3tYnR5lnVDEzvV/view?usp=sharing"></td>
+        </tr>
+    </tbody>
+</table>
+
+### **Таблица состояний и переходов объекта "Заказ":**<p>
+
+<table>
+    <thead>
+        <tr>
+            <th style="border-style:hidden solid solid hidden" width="143px">&nbsp;</th>
+            <th width="143px">Оформить</th>
+            <th width="143px">Оплатить онлайн</th>
+            <th width="143px">Обработать</th>
+            <th width="143px">Отменить</th>
+            <th width="143px">Оплатить при получении</th>
+            <th width="143px">Получить</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Не существует</th>
+            <td align="center"><i>Новый</i></td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+        </tr>
+        <tr>
+            <th>Новый</th>
+            <td align="center">Не может произойти</td>
+            <td align="center"><i>Оплачен онлайн</i></td>
+            <td align="center"><i>Сформирован</i></td>
+            <td align="center"><i>Отменен</i></td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+        </tr>
+        <tr>
+            <th>Оплачен онлайн</th>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center"><i>Сформирован</i></td>
+            <td align="center"><i>Отменен</i></td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+        </tr>
+        <tr>
+            <th>Сформирован</th>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center"><i>Готов к получению</i></td>
+            <td align="center"><i>Отменен</i></td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+        </tr>
+        <tr>
+            <th>Готов к получению</th>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center"><i>Отменен</i></td>
+            <td align="center"><i>Оплачен</i></td>
+            <td align="center">Не может произойти</td>
+        </tr>
+        <tr>
+            <th>Отменен</th>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+        </tr>
+        <tr>
+            <th>Оплачен</th>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center"><i>Получен</i></td>
+        </tr>
+        <tr>
+            <th>Получен</th>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+            <td align="center">Не может произойти</td>
+        </tr>
+    </tbody>
+</table>
+
+### **Чек-лист для проверки состояний и переходов объекта "Заказ":**<p>
+
+|  №  | Описание                            | Статус | Комментарий |
+|:---:|-------------------------------------|:------:|:-----------:|
+| 1.  | Оформление нового заказа            | PASSED |      —      |
+| 2.  | Оплата нового заказа онлайн         | PASSED |      —      |
+| 3.  | Обработка нового заказа             | PASSED |      —      |
+| 4.  | Обработка оплаченного онлайн заказа | PASSED |      —      |
+| 5.  | Обработка сформированного заказа    | PASSED |      —      |
+| 6.  | Отмена нового заказа                | PASSED |      —      |
+| 7.  | Отмена оплаченного онлайн заказа    | PASSED |      —      |
+| 8.  | Отмена сформированного заказа       | PASSED |      —      |
+| 9.  | Отмена готового к получению заказа  | PASSED |      —      |
+| 10. | Оплата готового к получению заказа  | PASSED |      —      |
+| 11. | Получение оплаченного заказа        | PASSED |      —      |
+
+***
+
+[Вернуться наверх](#up)<p>
