@@ -1823,11 +1823,9 @@
             <td align="center"><big>✕</big></td>
             <td align="center"><big>✕</big></td>
         </tr>
-    </tbody>
-</table>
-
-<table>
-    <tbody>
+        <tr>
+            <td colspan="11">&nbsp;</td>
+        </tr>
         <tr>
             <th align="left" width="230px">Пароль успешно изменен</th>
             <td align="center" width="76.9px"><big>✓</big></td>
@@ -1973,6 +1971,7 @@
         </tr>
     </tbody>
 </table>
+
 
 ***
 
