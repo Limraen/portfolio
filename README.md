@@ -7,7 +7,7 @@
 •&ensp;[Чек-листы](#check-lists)<p>
 •&ensp;[Тест-кейсы](#test-cases)<p>
 •&ensp;[Отчеты о дефектах](#bug-reports)<p>
-•&ensp;[Диаграмма состояний и переходов](#state-and-transition-table)<p>
+•&ensp;[Диаграмма состояний и переходов](#state-and-transition-diagram)<p>
 •&ensp;[Таблица принятия решений](#decision-table)<p>
 •&ensp;[Таблица тестов для попарного тестирования (скомбинирована в PICT)](#pairwise)<p>
 •&ensp;[Чек-листы для проверки методом предугадывания ошибок](#error-guessing)<p>
@@ -1547,7 +1547,7 @@
 
 [Вернуться наверх](#up)<p>
 
-# <a name="state-and-transition-table"></a> Таблица принятия решений
+# <a name="state-and-transition-diagram"></a> Диаграмма состояний и переходов
 
 ### **Примеры объектов, подходящих для техники тестирования состояний и переходов:**
 
@@ -1573,13 +1573,7 @@
 
 ### **Диаграмма состояний и переходов для объекта "Заказ":**
 
-<table>
-    <tbody>
-        <tr>
-            <td align="center"><img src="https://drive.google.com/file/d/1BUr8OZ7L5xD6m3A2Db3tYnR5lnVDEzvV/view?usp=sharing"></td>
-        </tr>
-    </tbody>
-</table>
+
 
 ### **Таблица состояний и переходов объекта "Заказ":**<p>
 
