@@ -1684,3 +1684,296 @@
 ***
 
 [Вернуться наверх](#up)<p>
+
+# <a name="decision-table"></a> Таблица принятия решений
+
+### **Проверка смены пароля в личном кабинете пользователя методом таблицы принятия решений**<p>
+
+<table>
+    <thead>
+        <tr>
+            <th style="border-style:hidden solid solid hidden" width="230px">&nbsp;</th>
+            <th width="76.9px">Тест №1</th>
+            <th width="76.9px">Тест №2</th>
+            <th width="76.9px">Тест №3</th>
+            <th width="76.9px">Тест №4</th>
+            <th width="76.9px">Тест №5</th>
+            <th width="76.9px">Тест №6</th>
+            <th width="76.9px">Тест №7</th>
+            <th width="76.9px">Тест №8</th>
+            <th width="76.9px">Тест №9</th>
+            <th width="76.9px">Тест №10</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th align="left">Текущий пароль указан?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Новый пароль указан?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Подтверждение пароля указано?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Подтверждение пароля соответствует новому паролю?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Размер текущего пароля больше 6-ти символов?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Размер нового пароля больше 6-ти символов?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Размер подтверждения пароля больше 6-ти символов?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Текущий пароль верный?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Новый пароль состоит из двух категорий символов?</th>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <tbody>
+        <tr>
+            <th align="left" width="230px">Пароль успешно изменен</th>
+            <td align="center" width="76.9px"><big>✓</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+            <td align="center" width="76.9px"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось предупреждение "Поле обязательно для заполнения" рядом с полем "Текущий пароль"</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось предупреждение "Поле обязательно для заполнения" рядом с полем "Новый пароль"</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось предупреждение "Поле обязательно для заполнения" рядом с полем "Подтверждение пароля"</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось предупреждение "Пароли не совпадают" рядом с полем "Подтверждение пароля"</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось предупреждение "Пароль должен содержать минимум 6 символов" рядом с полем "Текущий пароль"</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось предупреждение "Пароль должен содержать минимум 6 символов" рядом с полем "Новый пароль"</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось предупреждение "Пароль должен содержать минимум 6 символов" рядом с полем "Подтверждение пароля"</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Кнопка "Сменить пароль" неактивна</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✓</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось сообщение "Этот пароль не подходит этой учетной записи"</th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+        <tr>
+            <th align="left">Появилось предупреждение "Минимум разных классов символов в пароле 2. Классы символов: Нижний регистр, Верхний регистр, Цифры, Специальные символы" </th>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✓</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+            <td align="center"><big>✕</big></td>
+        </tr>
+    </tbody>
+</table>
+
+***
+
+[Вернуться наверх](#up)<p>
