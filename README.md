@@ -1573,7 +1573,7 @@
 
 ### **Диаграмма состояний и переходов для объекта "Заказ":**
 
-
+![State & Transition Diagram](https://github.com/Limraen/portfolio/blob/main/assets/S%26T.png)
 
 ### **Таблица состояний и переходов объекта "Заказ":**<p>
 
