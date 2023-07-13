@@ -2464,7 +2464,7 @@
     <thead>
         <tr>
             <th colspan="3">Запрос</th>
-            <th>Пояснение</th>
+            <th width="300px">Пояснение</th>
         </tr>
     </thead>
     <tbody>
