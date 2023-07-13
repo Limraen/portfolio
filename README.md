@@ -2455,3 +2455,96 @@
 [Вернуться наверх](#up)<p>
 
 ***
+
+# <a name="sql"></a> SQL-запросы
+
+### **DDL и DML запросы, выполненные в MySQL**<p>
+
+<table>
+    <thead>
+        <tr>
+            <th colspan="3">Запрос</th>
+            <th>Пояснение</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1.</th>
+            <th>CREATE</th>
+            <td><b>CREATE TABLE</b> Customers (<br>
+                customer_id <b>INT NOT NULL AUTO_INCREMENT</b>,<br>
+                customer_name <b>VARCHAR(255) NOT NULL</b>,<br>
+                contact_name <b>VARCHAR(255) NOT NULL</b>,<br>
+                address <b>VARCHAR(255) NOT NULL</b>,<br>
+                city <b>VARCHAR(255) NOT NULL</b>,<br>
+                postal_code <b>VARCHAR(255) NOT NULL</b>,<br>
+                country <b>VARCHAR(255) NOT NULL</b>,<br>
+                <b>PRIMARY KEY</b> (customer_id));</td>
+            <td>Создание таблицы <b>Customers</b> с полями:<br>
+                1) customer_id;<br> 
+                2) customer_name;<br> 
+                3) contact_name;<br> 
+                4) address;<br> 
+                5) city;<br> 
+                6) postal_code;<br>
+                7) country.</td>
+        </tr>
+        <tr>
+            <th>2.</th>
+            <th>ALTER / DROP</th>
+            <td><b>ALTER TABLE</b> orders<br>
+                <b>DROP COLUMN</b> product_id<br>
+                <b>DROP COLUMN</b> order_price;</td>
+            <td>Удаление из таблицы <b>Orders</b> столбцов <b>product_id</b> и <b>order_price</b>.</td>
+        </tr>
+        <tr>
+            <th>3.</th>
+            <th>SELECT</th>
+            <td><b>SELECT</b> *<br>
+                <b>FROM</b> Products<br>
+                <b>JOIN</b> Categories <b>ON</b> Products.categoryid = Categories.categoryid<br>
+                <b>JOIN</b> Suppliers <b>ON</b> Products.supplierid = Suppliers.supplierid<br>
+                <b>WHERE</b> productid <b>BETWEEN</b> 10 <b>AND</b> 20<br>
+                <b>ORDER BY</b> price <b>DESC</b>;</td>
+            <td>Вывод всей информации по продуктам, их категориям и поставщикам для продуктов с уникальным номером между 10 и 20. Информация отсортированна по цене в порядке убывания.</td>
+        </tr>
+        <tr>
+            <th>4.</th>
+            <th>INSERT</th>
+            <td><b>INSERT INTO</b> MSuppliers<br>
+                <b>SELECT</b> *<br>
+                <b>FROM</b> Suppliers<br>
+                <b>WHERE</b> supplierid <b>IN</b><br>
+                (<b>SELECT</b> supplierid<br>
+                <b>FROM</b> Products<br>
+                <b>GROUP BY</b> supplierid<br>
+                <b>HAVING COUNT</b>(productid) > 3);</td>
+            <td>Внесение в таблицу <b>MSuppliers</b> информации о поставщиках из таблицы <b>Suppliers</b> , поставляющих более трех продуктов, (определения столбцов таблиц полностью совпадают).</td>
+        </tr>
+        <tr>
+            <th>5.</th>
+            <th>UPDATE</th>
+            <td><b>UPDATE</b> Products<br>
+                <b>SET</b> price = price/2<br>
+                <b>WHERE</b> productid <b>IN</b><br>
+                (<b>SELECT MAX</b>(quantity)<br>
+                <b>FROM</b> OrderDetails<br>
+                <b>GROUP BY</b> quantity<br>
+                <b>HAVING MAX</b>(quantity) < 20);</td>
+            <td>Уменьшение вдвое цены для всех продуктов из таблицы <b>Products</b>, максимальное количество посылок в заказе с которыми меньше 20.</td>
+        </tr>
+        <tr>
+            <th>6.</th>
+            <th>DELETE</th>
+            <td><b>DELETE FROM</b> Customers<br>
+                <b>WHERE</b> customerid <> <b>ALL</b><br>
+                (<b>SELECT</b> customerid<br>
+                <b>FROM</b> Orders);</td>
+            <td>Удаление из таблицы <b>Customers</b> всей информации о покупателях, не имеющих в настоящее время заказов.</td>
+        </tr>
+    </tbody>
+</table>
+
+[Вернуться наверх](#up)<p>
+
+***
