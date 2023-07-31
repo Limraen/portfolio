@@ -1,7 +1,7 @@
 ![Header](https://github.com/Limraen/portfolio/blob/main/assets/Neon.jpg)
 
 В данном портфолио предлагаю ознакомиться с примерами артефактов, оформленных мной в процессе проведения функционального
-тестирования интернет-аптеки "Ригла".
+тестирования интернет-аптеки "Ригла", примерами SQL-запросов и коллекцией запросов из Postman для тестирования API инструмента Helpdesk.
 
 <a name="up"></a>
 
@@ -124,7 +124,7 @@
 | 16. | Ввод в поле "Отчество" символов кириллицы                                              | PASSED |           —           |
 | 17. | Ввол в поле "Отчество" значения из 1 символа (НГ)                                      | PASSED |           —           |
 | 18. | Ввод в поле "Отчество" значения из 25 символов (ВГ)                                    | PASSED |           —           |
-| 19. | Возможность оставить необязательное поле "Фамилия" пустым                              | FAILED | [BUG-4970](#BUG-4970) |
+| 19. | Возможность оставить необязательное поле "Фамилия" пустым                              | FAILED | [BUG-4970](#bug-4970) |
 | 20. | Ввод в поле "Фамилия" символов кириллицы                                               | PASSED |           —           |
 | 21. | Ввод в поле "Фамилия" значения из 1 символа (НГ)                                       | PASSED |           —           |
 | 22. | Ввод в поле "Фамилия" значения из 25 символов (ВГ)                                     | PASSED |           —           |
@@ -143,7 +143,7 @@
 | 6.  | Невозможность ввода в поле "Телефон" более 10 символов при изменении номера                          | PASSED |           —           |
 | 7.  | Невозможность ввода в поле "Email" значения некорректного формата                                    | PASSED |           —           |
 | 8.  | Невозможность указания в имени почтового ящика в поле "Email" спесцимволов < , > ; : [ ] \ / " *     | PASSED |           —           |
-| 9.  | Невозможность ввода в поле "Email" значения с несуществующим почтовым доменом                        | FAILED | [BUG-5340](#BUG-5340) |
+| 9.  | Невозможность ввода в поле "Email" значения с несуществующим почтовым доменом                        | FAILED | [BUG-5340](#bug-5340) |
 | 10. | Невозможность ввода в поле "Email" значения из 8 символов (НГ - 1)                                   | PASSED |           —           |
 | 11. | Невозможность ввода в поле "Email" значения из 76 символов (ВГ + 1)                                  | PASSED |           —           |
 | 12. | Невозможность ввода в поле "Пароль" значения из 5 символов (НГ - 1)                                  | PASSED |           —           |
@@ -954,7 +954,7 @@
 
 </details>
 
-<a name="BUG-4970"></a>
+<a name="bug-4970"></a>
 **<details><summary>BUG-4970: При редактировании личных данных невозможно оставить поле "Фамилия" пустым</summary>**
 
 <table>
@@ -1053,7 +1053,7 @@
 
 </details>
 
-<a name="BUG-5266"></a>
+<a name="bug-5266"></a>
 **<details><summary>BUG-5266: При нажатии на кнопку "Показать все" в расширенном поиске каталога не появляется элемент
 прокрутки</summary>**
 
@@ -1152,7 +1152,7 @@
 
 </details>
 
-<a name="BUG-5267"></a>
+<a name="bug-5267"></a>
 **<details><summary>BUG-5267: При нажатии на производителя не открывается страница с его препаратами</summary>**
 
 <table>
@@ -1251,7 +1251,7 @@
 
 </details>
 
-<a name="BUG-5269"></a>
+<a name="bug-5269"></a>
 **<details><summary>BUG-5269: При выборе количества отображаемого товара "80" на странице каталога отображаются только
 50 товаров</summary>**
 
@@ -1350,7 +1350,7 @@
 
 </details>
 
-<a name="BUG-5340"></a>
+<a name="bug-5340"></a>
 **<details><summary>BUG-5340: Не появляется предупреждение при вводе в поле "Email" значения с несуществующим
 доменом</summary>**
 
@@ -2341,7 +2341,7 @@
         <tr>
             <th align="center">1.</th>
             <th>Миссия / Функционал</th>
-            <td>Проверить покупку товара от поиска до оформления заказа (авторизованный пользователь). Необходимо проверить основную логику функционала.<p>
+            <td>Проверить покупку товара от поиска до оформления заказа (авторизованный пользователь). Необходимо проверить основную логику функционала.<br>
             Функционал:<p>
             <b>1. Поисковая строка:</b><br>
             &emsp;1) Поиск товара.<br>
@@ -2441,13 +2441,13 @@
             <th rowspan="5">Найденные дефекты</th>
         </tr>
         <tr>
-            <td><a href="#BUG-5266">BUG-5266</a></td>
+            <td><a href="#bug-5266">BUG-5266</a></td>
         </tr>
         <tr>
-            <td><a href="#BUG-5267">BUG-5267</a></td>
+            <td><a href="#bug-5267">BUG-5267</a></td>
         </tr>
         <tr>
-            <td><a href="#BUG-5269">BUG-5269</a></td>
+            <td><a href="#bug-5269">BUG-5269</a></td>
         </tr>
     </tbody>
 </table>
@@ -2458,7 +2458,7 @@
 
 # <a name="sql"></a> SQL-запросы
 
-### **DDL и DML запросы, выполненные в MySQL**<p>
+### **Примеры DDL и DML запросов**<p>
 
 <table>
     <thead>
@@ -2502,9 +2502,9 @@
             <th>SELECT</th>
             <td><b>SELECT</b> *<br>
                 <b>FROM</b> Products<br>
-                <b>JOIN</b> Categories <b>ON</b> Products.categoryid = Categories.categoryid<br>
-                <b>JOIN</b> Suppliers <b>ON</b> Products.supplierid = Suppliers.supplierid<br>
-                <b>WHERE</b> productid <b>BETWEEN</b> 10 <b>AND</b> 20<br>
+                <b>JOIN</b> Categories <b>ON</b> Products.category_id = Categories.category_id<br>
+                <b>JOIN</b> Suppliers <b>ON</b> Products.supplier_id = Suppliers.supplier_id<br>
+                <b>WHERE</b> product_id <b>BETWEEN</b> 10 <b>AND</b> 20<br>
                 <b>ORDER BY</b> price <b>DESC</b>;</td>
             <td>Вывод всей информации по продуктам, их категориям и поставщикам для продуктов с уникальным номером между 10 и 20. Информация отсортированна по цене в порядке убывания.</td>
         </tr>
@@ -2514,11 +2514,11 @@
             <td><b>INSERT INTO</b> MSuppliers<br>
                 <b>SELECT</b> *<br>
                 <b>FROM</b> Suppliers<br>
-                <b>WHERE</b> supplierid <b>IN</b><br>
-                (<b>SELECT</b> supplierid<br>
+                <b>WHERE</b> supplier_id <b>IN</b><br>
+                (<b>SELECT</b> supplier_id<br>
                 <b>FROM</b> Products<br>
-                <b>GROUP BY</b> supplierid<br>
-                <b>HAVING COUNT</b>(productid) > 3);</td>
+                <b>GROUP BY</b> supplier_id<br>
+                <b>HAVING COUNT</b>(product_id) > 3);</td>
             <td>Внесение в таблицу <b>MSuppliers</b> информации о поставщиках из таблицы <b>Suppliers</b> , поставляющих более трех продуктов, (определения столбцов таблиц полностью совпадают).</td>
         </tr>
         <tr>
@@ -2526,7 +2526,7 @@
             <th>UPDATE</th>
             <td><b>UPDATE</b> Products<br>
                 <b>SET</b> price = price/2<br>
-                <b>WHERE</b> productid <b>IN</b><br>
+                <b>WHERE</b> product_id <b>IN</b><br>
                 (<b>SELECT MAX</b>(quantity)<br>
                 <b>FROM</b> OrderDetails<br>
                 <b>GROUP BY</b> quantity<br>
@@ -2537,8 +2537,8 @@
             <th>6.</th>
             <th>DELETE</th>
             <td><b>DELETE FROM</b> Customers<br>
-                <b>WHERE</b> customerid <> <b>ALL</b><br>
-                (<b>SELECT</b> customerid<br>
+                <b>WHERE</b> customer_id <> <b>ALL</b><br>
+                (<b>SELECT</b> customer_id<br>
                 <b>FROM</b> Orders);</td>
             <td>Удаление из таблицы <b>Customers</b> всей информации о покупателях, не имеющих в настоящее время заказов.</td>
         </tr>
