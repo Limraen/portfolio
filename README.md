@@ -2551,4 +2551,48 @@
 
 # <a name="api"></a> API-коллекция и запросы
 
+### **Документация:**<p>
 
+![API documentation](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Swagger_documentation.png)
+
+### **Коллекция запросов в Postman с результатами тестов:**<p>
+
+![Collection run](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_Collection%20Run.png)
+
+### Проверки для блока "login":<p>
+
+![Login](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_login.png)
+
+### Проверки для блока "queues":<p>
+
+![Queues](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_queues.png)
+
+### Проверки для блока "searches":<p>
+
+![Searches](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_searches.png)
+
+### Проверки для блока "tickets":<p>
+
+![Tickets](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_tickets_1.png)
+
+![Tickets](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_tickets_2.png)
+
+### Пример POST-запроса:<p>
+
+![POST](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_POST.png)
+
+### Пример GET-запроса:<p>
+
+![GET](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_GET.png)
+
+### Пример PUT-запроса:<p>
+
+![PUT](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_PUT.png)
+
+### Пример PATCH-запроса:<p>
+
+![PATCH](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_PATCH.png)
+
+### Пример DELETE-запроса:<p>
+
+![DELETE](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_DELETE.png)
