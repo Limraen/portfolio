@@ -20,7 +20,7 @@
 
 ### **1. Чек-листы для проверки функционала "Авторизация":**<p>
 
-**<details><summary>1.1. Позитивный</summary>**
+**1.1. Позитивный**
 
 |  №  | Проверка                                                      | Статус | Комментарий |
 |:---:|---------------------------------------------------------------|:------:|:-----------:|
@@ -35,9 +35,7 @@
 | 9.  | Ввод нового пароля размером более 6-ти символов (НГ)          | PASSED |      —      |
 | 10. | Совпадение при вводе и подтверждении нового пароля            | PASSED |      —      |
 
-</details>
-
-**<details><summary>1.2. Негативный</summary>**
+**1.2. Негативный**
 
 |  №  | Проверка                                                                             | Статус | Комментарий |
 |:---:|--------------------------------------------------------------------------------------|:------:|:-----------:|
@@ -52,13 +50,11 @@
 | 9.  | Невозможность указания нового пароля размером менее 6-ти символов (НГ - 1)           | PASSED |      —      |
 | 10. | Невозможность смены пароля при несовпадении "Нового пароля" и "Подтверждения пароля" | PASSED |      —      |
 
-</details><p>
-
 ***
 
 ### **2. Чек-листы для проверки функционала "Оформление заказа":**<p>
 
-**<details><summary>2.1. Позитивный</summary>**
+**2.1. Позитивный**
 
 |  №  | Проверка                                                   | Статус | Комментарий |
 |:---:|------------------------------------------------------------|:------:|:-----------:|
@@ -78,9 +74,7 @@
 | 14. | Изменение адреса электронной почты                         | PASSED |      —      |
 | 15. | Подтверждение заказа                                       | PASSED |      —      |
 
-</details>
-
-**<details><summary>2.2. Негативный</summary>**
+**2.2. Негативный**
 
 |  №  | Проверка                                                                                 | Статус | Комментарий |
 |:---:|------------------------------------------------------------------------------------------|:------:|:-----------:|
@@ -96,13 +90,11 @@
 | 10. | Невозможность оформления заказа, недоступного в выбранной аптеке                         | PASSED |      —      |
 | 11. | Невозможность изменения личных данных пользователя                                       | PASSED |      —      |
 
-</details><p>
-
 ***
 
 ### **3. Чек-листы для проверки полей ввода в разделе "Мои данные" личного кабинета пользователя:**<p>
 
-**<details><summary>3.1. Позитивный</summary>**
+**3.1. Позитивный**
 
 |  №  | Проверка                                                                               | Статус |      Комментарий      |
 |:---:|----------------------------------------------------------------------------------------|:------:|:---------------------:|
@@ -129,9 +121,7 @@
 | 21. | Ввод в поле "Фамилия" значения из 1 символа (НГ)                                       | PASSED |           —           |
 | 22. | Ввод в поле "Фамилия" значения из 25 символов (ВГ)                                     | PASSED |           —           |
 
-</details>
-
-**<details><summary>3.2. Негативный</summary>**
+**3.2. Негативный**
 
 |  №  | Проверка                                                                                             | Статус |      Комментарий      |
 |:---:|------------------------------------------------------------------------------------------------------|:------:|:---------------------:|
@@ -163,8 +153,6 @@
 | 26. | Невозможность ввода в поле "Фамилия" символов латиницы                                               | PASSED |           —           |
 | 27. | Невозможность ввода в поле "Фамилия" цифр                                                            | PASSED |           —           |
 | 28. | Невозможность ввода в поле "Фамилия" значения из 26 символов (ВГ + 1)                                | PASSED |           —           |
-
-</details><p>
 
 [Вернуться наверх](#up)<p>
 
@@ -2559,40 +2547,465 @@
 
 ![Collection run](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_Collection%20Run.png)
 
-### Проверки для блока "login":<p>
+### **Проверки для блока "login":**<p>
 
 ![Login](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_login.png)
 
-### Проверки для блока "queues":<p>
+### **Проверки для блока "queues":**<p>
 
 ![Queues](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_queues.png)
 
-### Проверки для блока "searches":<p>
+### **Проверки для блока "searches":**<p>
 
 ![Searches](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_searches.png)
 
-### Проверки для блока "tickets":<p>
+### **Проверки для блока "tickets":**<p>
 
 ![Tickets](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_tickets_1.png)
 
 ![Tickets](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_tickets_2.png)
 
-### Пример POST-запроса:<p>
+### **Пример POST-запроса:**<p>
 
 ![POST](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_POST.png)
 
-### Пример GET-запроса:<p>
+### **Пример GET-запроса:**<p>
 
 ![GET](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_GET.png)
 
-### Пример PUT-запроса:<p>
+### **Пример PUT-запроса:**<p>
 
 ![PUT](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_PUT.png)
 
-### Пример PATCH-запроса:<p>
+### **Пример PATCH-запроса:**<p>
 
 ![PATCH](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_PATCH.png)
 
-### Пример DELETE-запроса:<p>
+### **Пример DELETE-запроса:**<p>
 
 ![DELETE](https://github.com/Limraen/portfolio/blob/main/assets/Postman/Helpdesk_DELETE.png)
+
+### **Отчеты о дефектах:**
+
+**<details><summary>BUG-5565: (API) При отправке POST-запроса на /api/searches тело ответа не соответствует ожидаемому</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Открыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">24.07.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10, Version 22H2</td>
+        </tr>
+        <tr>
+            <td>• Postman for Windows, Version 10.16.5</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Выбран метод POST. </td>
+        </tr>
+        <tr>
+            <td>2. URL: {base_url}/api/searches.</td>
+        </tr>
+        <tr>
+            <td>3. Установлен хедер со значением токена авторизации. </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Указать тело запроса:
+
+```JSON
+{
+  "query": "{значение}",
+  "title": "{значение}"
+}
+```
+<p>2. Отправить запрос.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Статус ответа: 201 Created.<br>
+                2. Ответ в формате JSON, структура ответа соответствует требованиям.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Статус ответа: 201 Created.<br>
+                2. Формат ответа JSON, структура ответа не соответствует требованиям.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-5567: (API) При отправке POST-запроса на /api/tickets код ответа не соответствует ожидаемому</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Открыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">24.07.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10, Version 22H2</td>
+        </tr>
+        <tr>
+            <td>• Postman for Windows, Version 10.16.5</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Выбран метод POST. </td>
+        </tr>
+        <tr>
+            <td>2. URL: {base_url}/api/tickets.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Указать тело запроса:
+
+```JSON
+{
+  "due_date": "1900-10-01",
+  "title": "{значение}",
+  "queue": 1
+}
+```
+<p>2. Отправить запрос.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Статус ответа: 400 Bad Request.</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Статус ответа: 201 Created.</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-5568: (API) При отправке PUT запроса на /api/tickets код ответа не соответствует ожидаемому</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Открыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">24.07.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10, Version 22H2</td>
+        </tr>
+        <tr>
+            <td>• Postman for Windows, Version 10.16.5</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Выбран метод PUT. </td>
+        </tr>
+        <tr>
+            <td>2. URL: {base_url}/api/tickets/{id} ({id} тикета со значением "status": 4).</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Указать тело запроса:
+
+```JSON
+{
+  "title": "{значение}",
+  "status": 1,   
+  "queue": 1
+}
+```
+<p>2. Отправить запрос.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Статус ответа: 422 Unprocessable Entity: transferring the status "Closed" to "Open".</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Статус ответа: 200 OK.           
+</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
+
+**<details><summary>BUG-5569: (API) При отправке PATCH запроса на /api/tickets код ответа не соответствует ожидаемому</summary>**
+
+<table>
+    <thead>
+        <tr>
+            <th width="250px">Статус:</th>
+            <th width="250px">Серьезность:</th>
+            <th width="250px">Приоритет:</th>
+            <th width="250px">Дата создания:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">Открыт</td>
+            <td align="center">Значительная</td>
+            <td align="center">Средний</td>
+            <td align="center">24.07.2023</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Окружение:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>• Windows 10, Version 22H2</td>
+        </tr>
+        <tr>
+            <td>• Postman for Windows, Version 10.16.5</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Предварительные условия:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Выбран метод PATCH. </td>
+        </tr>
+        <tr>
+            <td>2. URL: {base_url}/api/tickets/{id} ({id} тикета со значением "status": 4).</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Шаги воспроизведения:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1. Указать тело запроса:
+
+```JSON
+{
+  "title": "{значение}",
+  "status": 1,    
+  "queue": 1
+}
+```
+<p>2. Отправить запрос.
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Ожидаемый результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Статус ответа: 422 Unprocessable Entity: transferring the status "Closed" to "Open".</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th width="1000px">Фактический результат:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Статус ответа: 200 OK.           
+</td>
+        </tr>
+    </tbody>
+</table>
+
+</details>
