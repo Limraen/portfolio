@@ -956,7 +956,7 @@
     </thead>
     <tbody>
         <tr>
-            <td align="center">Новый</td>
+            <td align="center">Открыт</td>
             <td align="center">Незначительная</td>
             <td align="center">Низкий</td>
             <td align="center">27.02.2023</td>
@@ -2503,8 +2503,10 @@ DROP COLUMN order_price;
 ```sql
 SELECT *
 FROM Products
-JOIN Categories ON Products.category_id = Categories.category_id
-JOIN Suppliers ON Products.supplier_id = Suppliers.supplier_id
+JOIN Categories ON Products.category_id = 
+Categories.category_id
+JOIN Suppliers ON Products.supplier_id = 
+Suppliers.supplier_id
 WHERE product_id BETWEEN 10 AND 20
 ORDER BY price DESC;
 ```
