@@ -2412,7 +2412,7 @@
             <td><a href="https://drive.google.com/file/d/1QE_gPY1mMlkZO6TTIkOJi09qa5p6fzU_/view?usp=sharing">Чек-листы для проверки корзины</a></td>
         </tr>
         <tr>
-            <td><a href="https://drive.google.com/file/d/1--XCIt7ZN2BXXd365uXCX4pM_fPYTJNC/view?usp=sharing">Чек-листы проверки оформления заказа</a></td>
+            <td><a href="https://drive.google.com/file/d/1--XCIt7ZN2BXXd365uXCX4pM_fPYTJNC/view?usp=sharing">Чек-листы для проверки оформления заказа</a></td>
         </tr>
         <tr>
             <th align="center">6.</th>
@@ -2459,16 +2459,21 @@
         <tr>
             <th>1.</th>
             <th>CREATE</th>
-            <td><b>CREATE TABLE</b> Customers (<br>
-                customer_id <b>INT NOT NULL AUTO_INCREMENT</b>,<br>
-                customer_name <b>VARCHAR(255) NOT NULL</b>,<br>
-                contact_name <b>VARCHAR(255) NOT NULL</b>,<br>
-                address <b>VARCHAR(255) NOT NULL</b>,<br>
-                city <b>VARCHAR(255) NOT NULL</b>,<br>
-                postal_code <b>VARCHAR(255) NOT NULL</b>,<br>
-                country <b>VARCHAR(255) NOT NULL</b>,<br>
-                <b>PRIMARY KEY</b> (customer_id));</td>
-            <td>Создание таблицы <b>Customers</b> с полями:<br>
+            <td>
+
+```sql
+CREATE TABLE Customers (
+customer_id INT NOT NULL AUTO_INCREMENT,
+customer_name VARCHAR(255) NOT NULL,
+contact_name VARCHAR(255) NOT NULL,
+address VARCHAR(255) NOT NULL,
+city VARCHAR(255) NOT NULL,
+postal_code VARCHAR(255) NOT NULL,
+country VARCHAR(255) NOT NULL,
+PRIMARY KEY(customer_id));
+```
+
+<td>Создание таблицы <b>Customers</b> с полями:<br>
                 1) customer_id;<br> 
                 2) customer_name;<br> 
                 3) contact_name;<br> 
@@ -2480,55 +2485,80 @@
         <tr>
             <th>2.</th>
             <th>ALTER / DROP</th>
-            <td><b>ALTER TABLE</b> orders<br>
-                <b>DROP COLUMN</b> product_id<br>
-                <b>DROP COLUMN</b> order_price;</td>
-            <td>Удаление из таблицы <b>Orders</b> столбцов <b>product_id</b> и <b>order_price</b>.</td>
+            <td>
+
+```sql
+ALTER TABLE orders
+DROP COLUMN product_id
+DROP COLUMN order_price;
+```
+
+<td>Удаление из таблицы <b>Orders</b> столбцов <b>product_id</b> и <b>order_price</b>.</td>
         </tr>
         <tr>
             <th>3.</th>
             <th>SELECT</th>
-            <td><b>SELECT</b> *<br>
-                <b>FROM</b> Products<br>
-                <b>JOIN</b> Categories <b>ON</b> Products.category_id = Categories.category_id<br>
-                <b>JOIN</b> Suppliers <b>ON</b> Products.supplier_id = Suppliers.supplier_id<br>
-                <b>WHERE</b> product_id <b>BETWEEN</b> 10 <b>AND</b> 20<br>
-                <b>ORDER BY</b> price <b>DESC</b>;</td>
-            <td>Вывод всей информации по продуктам, их категориям и поставщикам для продуктов с уникальным номером между 10 и 20. Информация отсортированна по цене в порядке убывания.</td>
+            <td>
+
+```sql
+SELECT *
+FROM Products
+JOIN Categories ON Products.category_id = Categories.category_id
+JOIN Suppliers ON Products.supplier_id = Suppliers.supplier_id
+WHERE product_id BETWEEN 10 AND 20
+ORDER BY price DESC;
+```
+
+<td>Вывод всей информации по продуктам, их категориям и поставщикам для продуктов с уникальным номером между 10 и 20. Информация отсортированна по цене в порядке убывания.</td>
         </tr>
         <tr>
             <th>4.</th>
             <th>INSERT</th>
-            <td><b>INSERT INTO</b> MSuppliers<br>
-                <b>SELECT</b> *<br>
-                <b>FROM</b> Suppliers<br>
-                <b>WHERE</b> supplier_id <b>IN</b><br>
-                (<b>SELECT</b> supplier_id<br>
-                <b>FROM</b> Products<br>
-                <b>GROUP BY</b> supplier_id<br>
-                <b>HAVING COUNT</b>(product_id) > 3);</td>
-            <td>Внесение в таблицу <b>MSuppliers</b> информации о поставщиках из таблицы <b>Suppliers</b> , поставляющих более трех продуктов, (определения столбцов таблиц полностью совпадают).</td>
+            <td>
+
+```sql
+INSERT INTO MSuppliers
+SELECT *
+FROM Suppliers
+WHEREsupplier_id IN
+(SELECT supplier_id
+FROM Products
+GROUP BY supplier_id
+HAVING COUNT(product_id) > 3);
+```
+
+<td>Внесение в таблицу <b>MSuppliers</b> записей из таблицы <b>Suppliers</b>, содержащих информацию о поставщиках, поставляющих более трех продуктов (определения столбцов таблиц полностью совпадают).</td>
         </tr>
         <tr>
             <th>5.</th>
             <th>UPDATE</th>
-            <td><b>UPDATE</b> Products<br>
-                <b>SET</b> price = price/2<br>
-                <b>WHERE</b> product_id <b>IN</b><br>
-                (<b>SELECT MAX</b>(quantity)<br>
-                <b>FROM</b> OrderDetails<br>
-                <b>GROUP BY</b> quantity<br>
-                <b>HAVING MAX</b>(quantity) < 20);</td>
-            <td>Уменьшение вдвое цены для всех продуктов из таблицы <b>Products</b>, максимальное количество посылок в заказе с которыми меньше 20.</td>
+            <td>
+
+```sql
+UPDATE Products
+SET price = price/2
+WHERE product_id IN
+(SELECT MAX(quantity)
+FROM OrderDetails
+GROUP BY quantity
+HAVING MAX(quantity) < 20);
+```
+
+<td>Уменьшение вдвое цены для всех продуктов из таблицы <b>Products</b>, максимальное количество посылок в заказе с которыми меньше 20.</td>
         </tr>
         <tr>
             <th>6.</th>
             <th>DELETE</th>
-            <td><b>DELETE FROM</b> Customers<br>
-                <b>WHERE</b> customer_id <> <b>ALL</b><br>
-                (<b>SELECT</b> customer_id<br>
-                <b>FROM</b> Orders);</td>
-            <td>Удаление из таблицы <b>Customers</b> всей информации о покупателях, не имеющих в настоящее время заказов.</td>
+            <td>
+
+```sql
+DELETE FROM Customers
+WHERE customer_id <> ALL
+(SELECT customer_id
+FROM Orders);
+```
+
+<td>Удаление из таблицы <b>Customers</b> всей информации о покупателях, не имеющих в настоящее время заказов.</td>
         </tr>
     </tbody>
 </table>
@@ -3009,3 +3039,5 @@
 </table>
 
 </details>
+
+[Вернуться наверх](#up)
